@@ -150,7 +150,7 @@ var game = {
         $(".content").html("<h2>Times Up!</h2>");
         $(".content").append("<h2> The Correct Answer Was: " + trivia[game.currentQuestion].correctAnswer + "</h2>");
         $(".content").append(trivia[game.currentQuestion].image);
-        if (game.currentQuestion === trivia.length - 1) {
+        if (game.currentQuestion === trivia.length - 2) {
             setTimeout(game.score, 2 * 1000)
         }
         else {
